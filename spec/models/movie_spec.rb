@@ -129,6 +129,7 @@ describe 'Movie' do
           can_be_found_updated_and_saved
           movie.reload
         }.to change{ movie.title }.from("Awesome Flick").to("Even Awesomer Flick")
+        puts movie.title
       end
 
       it 'can be updated using #update' do
